@@ -1,0 +1,88 @@
+body {
+  background-image: url(BG.jpg);
+  background-size: cover;
+}
+
+/* Non conoscendo il font nell'immagine, ne ho scelto uno a caso che gli rassomigliasse! */
+.box {
+  width: 70%;
+  height: 750px;
+  margin: auto;
+  background: rgba(0,0,0,0.5);
+  border-radius: 2%;
+  font-family: Verdana;
+  margin-top: 50px;
+}
+
+/* Siccome tutti gli elementi nel box rispettano lo stesso margine, l'ho specificato con questo selettore */
+.box > * {
+margin-left: 80px;
+margin-right: 80px;
+}
+
+#logo {
+  height: 80px;
+  width: 180px;
+}
+
+header {
+  text-align: center;
+  padding-top: 80px;
+  color: #00dd00;
+  font-size: 25px;
+}
+
+nav {
+  background-color: #00dd00;
+  padding: 10px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+li {
+  color: white;
+  padding-top: 25px;
+}
+
+li > span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 15px;
+  margin: 5px;
+  line-height: 20px;
+}
+
+/* Visto che questo simbolo compare all'inizio di ogni p, per comodità l'ho inserito con questo selettore */
+p:before {
+  content: "\21A6";
+}
+
+/* Siccome l'altezza e il bordo sono uguali per tutte le barre colorate li ho specificati qui, andando invece a cambiare con un id il colore e la larghezza di ciascuna barra */
+li > div {
+  height: 25px;
+  border-radius: 8px;
+}
+
+#Gino {
+  background-color: orange;
+  width: 400px;
+}
+
+#Mike {
+  background-color: green;
+  width: 600px;
+}
+
+#Fede {
+  background-color: red;
+  width: 200px;
+}
